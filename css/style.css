@@ -55,16 +55,14 @@ section[style*="background-image"] {
 
 /* Attractions */
 section[style*="attback.jpg"] {
-  background-image: url("../images/attback.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 2% 5%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.TopAttractionsHeader {
-  text-align: center;
+.TopAttractionsHeader h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .attractions {
