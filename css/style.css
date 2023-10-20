@@ -1,0 +1,147 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Sections with Background Image */
+section[style*="background-image"] {
+  display: flex; /* Changed from flex-direction column to row */
+  align-items: center;
+  min-height: 100vh;
+  color: rgb(255, 234, 0);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+}
+
+.left-content {
+  flex: 2;
+  text-align: left;
+}
+
+.left-content h3 {
+  font-size: 3em;
+}
+
+.right-content {
+  flex: 3;
+  text-align: left;
+  padding-left: 5%;
+  color: rgb(255, 234, 0);
+}
+
+/* Attractions */
+section[style*="attback.jpg"] {
+  background-image: url("../images/attback.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 2% 5%;
+  text-align: center;
+}
+
+.TopAttractionsHeader {
+  text-align: center;
+}
+
+.attractions {
+  display: flex;
+  justify-content: center; /* Center the attractions horizontally */
+  gap: 1rem;
+}
+
+.attractions > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: rgb(174, 0, 0);
+  font-weight: bold;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.stats > div {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  color: rgb(255, 255, 255);
+  border-radius: 50%; /* Making them circles */
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Stats_header {
+  color: darkgoldenrod;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0;
+}
+
+/* Quote */
+blockquote {
+  font-style: italic;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer a {
+  margin: 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.fab {
+  font-size: 1.5em;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
+
+.fab:hover {
+  color: #eee;
+  transform: scale(1.1);
+}
