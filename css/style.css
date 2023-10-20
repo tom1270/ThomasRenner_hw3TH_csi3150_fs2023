@@ -61,6 +61,7 @@ section[style*="attback.jpg"] {
 }
 
 .TopAttractionsHeader h3 {
+  font-size: 50px;
   margin: 0;
   padding: 0;
 }
@@ -69,10 +70,11 @@ section[style*="attback.jpg"] {
   display: flex;
   justify-content: center; /* Center the attractions horizontally */
   gap: 1rem;
+  width: 100%;
 }
 
 .attractions > div {
-  flex: 1;
+  flex: 1; /* This makes each card take equal width */
   display: flex;
   justify-content: center;
   align-items: center;
